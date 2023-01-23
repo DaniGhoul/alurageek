@@ -1,0 +1,108 @@
+.cabecalho {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.cabecalho__botao--link,
+.cabecalho__botao--admin {
+    border: solid 1px var(--azul);
+    padding: 0.8em 3em;
+    text-decoration: none;
+    color: var(--azul);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cabecalho__botao--admin {
+    padding: 0.8em 1.5em;
+}
+
+.cabecalho__campo--busca {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        justify-content: space-between;
+        gap: 2em;
+        padding: 1.5em 2.5em;
+    }
+    
+    .cabecalho__busca {
+        display: none;
+    }
+
+    .cabecalho__campo--busca {
+        display: block;
+    }
+
+    .campo--busca {
+        border-radius: 20px;
+        border-style: none;
+        padding: 1em;
+        width: 35vw;
+        background-color: var(--cinza-muito-claro);
+        position: relative;
+    }
+
+    .campo--busca::placeholder {
+        font-family: var(--fonte-principal);
+        color: var(-cinza-claro);
+        font-weight: 400;
+    }
+
+    .campo--busca__lupa {
+        position: absolute;
+        margin-left: -3em;
+        margin-top: 0.9em;
+        cursor: pointer;
+    }
+
+    .cabecalho__botao {
+        margin-left: 6.5em;
+    }
+
+    .cabecalho__botao--adm {
+        margin-left: 0;
+    }
+
+    .cabecalho__botao--admin {
+        padding: 0.8em 2em;
+    }
+    
+    .cabecalho__botao--link {
+        padding: 0.8em 5em;
+    }
+
+    .cabecalho__logo-e-busca {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .campo--busca {
+        width: 28vw;
+    }
+
+    .cabecalho__botao--link {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0.8em 4em;
+    }
+
+    .cabecalho__botao--admin {
+        padding: 0.8em 2em;
+    }
+}
+
+    
+

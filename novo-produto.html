@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>AluraGeek</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <header class="cabecalho">
+            <div class="cabecalho__logo-e-busca">
+                <div class="cabecalho__logo">
+                    <a href="index.html">
+                        <picture>
+                            <source srcset="img/Logo_grande.svg" media="(min-width: 1440px)" >
+                            <img src="img/Logo.svg" alt="Logo da AluraGeek" class="cabecalho__logo--imagem">
+                        </picture>      
+                    </a>          
+                </div>
+                <div class="cabecalho__campo--busca">
+                    <input type="search" placeholder="O que deseja encontrar?" class="campo--busca">
+                    <img src="img/lupa-clara.svg" class="campo--busca__lupa">
+                </div>
+            </div>
+            <div class="cabecalho__botao--adm">
+                <a href="#" class="cabecalho__botao--admin">Menu administrador</a>
+            </div>
+            <div class="cabecalho__busca">
+                <img src="img/lupa.svg" alt="Botão de busca" class="cabecalho__busca--imagem">
+            </div>
+        </header>
+
+        <div class="formulario__cadastro">
+            <h1 class="cadastro__titulo">Adicionar novo produto</h1>
+            <input type="url" placeholder="URL da imagem" class="cadastro__url"> 
+            <input type="text" placeholder="Categoria" class="cadastro__categoria"> 
+            <input type="text" placeholder="Nome do produto" class="cadastro__nome"> 
+            <input type="number" placeholder="Preço do produto" class="cadastro__preco"> 
+            <textarea cols="70" rows="4" placeholder="Descrição do produto" class="cadastro__descricao"></textarea>
+            <input type="submit" value="Adicionar produto" class="cadastro__adicionar">
+        </div>
+
+        <hr class="divisoria__rodape"/>
+
+        <footer class="rodape">
+            <div class="rodape__container">
+                <div class="rodape__logo-e-links">
+                    <a href="index.html"><img src="img/Logo_grande.svg" alt="Logo da AluraGeek" class="rodape__logo"></a>
+                    <ul class="rodape__menu">
+                        <li class="rodape__menu--item">
+                            <a href="#" class="rodape__menu--link">Quem somos nós</a>
+                        </li>
+                        <li class="rodape__menu--item">
+                            <a href="#" class="rodape__menu--link">Política de privacidade</a>
+                        </li>
+                        <li class="rodape__menu--item">
+                            <a href="#" class="rodape__menu--link">Programa fidelidade</a>
+                        </li>
+                        <li class="rodape__menu--item">
+                            <a href="#" class="rodape__menu--link">Nossas lojas</a>
+                        </li>
+                        <li class="rodape__menu--item">
+                            <a href="#" class="rodape__menu--link">Quero ser franqueado</a>
+                        </li>
+                        <li class="rodape__menu--item">
+                            <a href="#" class="rodape__menu--link">Anuncie aqui</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="rodape__contato">
+                    <h1 class="contato__titulo">Fale conosco</h1>
+                    <input type="text" placeholder="Nome" class="contato__nome"> 
+                    <textarea cols="70" rows="4" placeholder="Escreva sua mensagem" class="contato__mensagem"></textarea>
+                    <input type="submit" value="Enviar mensagem" class="contato__enviar">
+                </div>
+            </div>
+
+            <div class="rodape__desenvolvedor">
+                <p>Desenvolvido por Danielle Fernandes</p>
+                <p>2022</p>
+            </div>
+        </footer>
+
+    </body>
+</html>

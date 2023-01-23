@@ -1,0 +1,24 @@
+@import url(styles/cabecalho.css);
+@import url(styles/banner.css);
+@import url(styles/galeria.css);
+@import url(styles/rodape.css);
+@import url(styles/login.css);
+@import url(styles/novo-produto.css);
+@import url(styles/produto-info.css);
+
+:root {
+    --fonte-principal: "Raleway";
+    --branco: #FFFFFF;
+    --azul: #2A7AE4;
+    --azul-claro: #EAF2FD;
+    --cinza: #464646;
+    --cinza-claro: #A2A2A2;
+    --cinza-muito-claro: #F5F5F5;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 700;
+    background-color: var(--branco);
+}

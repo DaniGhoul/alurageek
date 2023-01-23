@@ -1,0 +1,108 @@
+.formulario__login {
+    background-color: var(--cinza-muito-claro);
+    padding: 6em 3em;
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 1em;
+}
+
+.login__titulo {
+    color: var(--cinza);
+    font-size: 16px;
+    text-align: center;
+}
+
+.login__email,
+.login__senha {
+    border-style: none;
+    border-radius: 2px;
+    box-shadow: 1px 1px var(--cinza-claro);
+    font-family: var(--fonte-principal);
+    color: var(--cinza);
+    font-size: 16px;
+    font-weight: 400;
+    height: 3em;
+}
+
+.login__email::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--cinza-claro);
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+.login__senha::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--cinza-claro);
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+.login__entrar {
+    width: 30%;
+    background-color: var(--azul);
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 1em;
+    border-style: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .login__email,
+    .login__senha {
+        width: 40%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .login__entrar {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .divisoria__rodape {
+        display: none;
+    }
+
+    .formulario__login {
+        row-gap: 2em;
+    }
+
+    .login__titulo{
+        font-size: 18px;
+    }
+
+    .login__email,
+    .login__senha {
+        width: 30%;
+        height: 3.5em;
+    }
+    
+    .login__email::placeholder {
+        top: 1.2em;
+    }
+
+    .login__senha::placeholder {
+        top: 1.2em;
+    }
+
+    .login__entrar {
+        width: 30%;
+        font-size: 18px;
+        padding: 1.2em;
+    }
+}

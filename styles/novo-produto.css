@@ -1,0 +1,113 @@
+.formulario__cadastro {
+    background-color: var(--cinza-muito-claro);
+    padding: 1.5em 2em;
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 1em;
+}
+
+.cadastro__titulo {
+    color: var(--cinza);
+    font-size: 22px;
+    padding-bottom: 0.4em;
+}
+
+.cadastro__url,
+.cadastro__categoria,
+.cadastro__nome,
+.cadastro__preco,
+.cadastro__descricao {
+    border-style: none;
+    border-radius: 2px;
+    box-shadow: 1px 1px var(--cinza-claro);
+    font-family: var(--fonte-principal);
+    color: var(--cinza);
+    font-size: 16px;
+    font-weight: 400;
+    height: 3em;
+    padding: 0.5em 0 0 0.5em;
+}
+
+.cadastro__descricao {
+    height: 4em;
+}
+
+.cadastro__url::placeholder,
+.cadastro__categoria::placeholder,
+.cadastro__nome::placeholder,
+.cadastro__preco::placeholder,
+.cadastro__descricao::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--cinza-claro);
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+.cadastro__descricao::placeholder {
+    font-size: 16px;
+}
+
+.cadastro__adicionar {
+    width: 100%;
+    background-color: var(--azul);
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 1em;
+    border-style: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+    .divisoria__rodape {
+        display: none;
+    }
+
+    .formulario__cadastro {
+        row-gap: 1.5em;
+        padding: 4em 0;
+    }
+
+    .cadastro__titulo{
+        font-size: 32px;
+        padding-bottom: 0;
+        margin-left: 30%;
+    }
+
+    .cadastro__url,
+    .cadastro__categoria,
+    .cadastro__nome,
+    .cadastro__preco,
+    .cadastro__descricao{
+        width: 40%;
+        height: 3.5em;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .cadastro__descricao {
+        height: 5em;
+    }
+    
+    .cadastro__url::placeholder,
+    .cadastro__categoria::placeholder,
+    .cadastro__nome::placeholder,
+    .cadastro__preco::placeholder,
+    .cadastro__descricao::placeholder {
+        top: 1.2em;
+    }
+
+    .cadastro__adicionar {
+        width: 40%;
+        font-size: 18px;
+        padding: 1.2em;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
